@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+:root{
+    --BG: hsl(192, 15%, 94%);
+    --text-color: hsl(0, 0%, 44%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    background: var(--BG);
+    color: black;
+}
+
+h1, h2, h3{
+    font-family: 'poppins';
+}
+
+p {
+    font-family: 'Open Sans';
+    color: var(--text-color);
+}
+
+nav {
+    background: var(--BG);
+    padding: .6em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    padding: 1em 0;
+}
+
+nav ul li {
+    text-decoration: none;
+    /* color: white; */
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    /* background-color: #336633; */
+    padding: .6em 1em;
+    border-radius: 5rem;
+}
+
+.hero {
+    height: 70vh;
+}
+
+.hero .container{
+    padding: 2em 0 0.4em 0;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: min-content;
+}
+
+.connect {
+    padding: 2em .5em;
+}
+
+.connect h3 {
+    color: var(--text-color);
+    padding-bottom: .3em;
+}
+
+.connect ul {
+    display: flex;
+}
+
+.connect ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.fa-brands, .fa-solid {
+    font-size: 29px;
+}
+
+.hero .container .left-col {
+    padding: 2em 4em;
+}
+
+.hero .container .left-col h1 {
+    font-size: 43px;
+    font-weight: 600;
+}
+
+.hero .container .right-col img {
+    height: 500px;
+}
+
+.project-section {
+    padding: 3em 4em;
+}
+
+.project-section h2 {
+    padding: .2em 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    /* grid-gap: 4rem; */
+    column-gap: 3em;
+    row-gap: 9em;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+
+  .project-image {
+    /* height: calc(100% - 5rem); */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .project-tile ul {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .project-tile ul li {
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+  }
+
+  .project-tile ul li a {
+    text-decoration: none;
+  }
+
+  .project-tile i {
+      font-size: 10px;
+  }
